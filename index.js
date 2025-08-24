@@ -133,10 +133,13 @@
 // client.initialize();
 
 require("dotenv").config();
+const express = require("express");
 const qrcode = require("qrcode-terminal");
 const { Client, LocalAuth } = require("whatsapp-web.js");
 const cron = require("node-cron");
 const axios = require("axios");
+
+const app = express();
 
 const TZ = "Asia/Kolkata";
 const GF_NUMBER = "919058061623@c.us"; // Your GF's WhatsApp ID
@@ -260,6 +263,11 @@ client.on("ready", () => {
   );
 
   console.log("🗓️ All AI-powered daily jobs scheduled!");
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
 
 client.initialize();
