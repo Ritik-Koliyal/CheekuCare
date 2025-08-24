@@ -11,7 +11,17 @@ const client = new Client({
   authStrategy: new LocalAuth({ clientId: "ai-scheduler-gf" }),
   puppeteer: {
     headless: true,
-    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    // args: ["--no-sandbox", "--disable-setuid-sandbox"],
+
+    args: [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-extensions",
+      "--disable-gpu",
+      "--window-size=1920,1080",
+      "--remote-debugging-port=9222",
+    ],
   },
 });
 
