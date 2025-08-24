@@ -198,7 +198,7 @@ client.on("ready", () => {
 
   // ✅ GOOD MORNING - 06:00
   cron.schedule(
-    "0 13 * * *",
+    "25 14 * * *",
     () => {
       sendAIMessage(
         "Good morning message likho Hinglish me, romantic tone, emoji ke sath, daily fresh vibe ke liye. 1 line only cheeku name k sath"
@@ -209,7 +209,7 @@ client.on("ready", () => {
 
   // ✅ BREAKFAST - 07:30
   cron.schedule(
-    "5 13 * * *",
+    "27 14 * * *",
     () => {
       sendAIMessage(
         "Care vali vibes me likho hinglish me breakfast kar lena time se cheeku ye message bhejna hai 1 line only."
@@ -220,7 +220,7 @@ client.on("ready", () => {
 
   // ✅ LUNCH - 13:00
   cron.schedule(
-    "10 13 * * *",
+    "30 14 * * *",
     () => {
       sendAIMessage(
         "Care vali vibes me likho hinglish me lunch kar lena time se cheeku ye message bhejna hai 1 line only."
@@ -231,7 +231,7 @@ client.on("ready", () => {
 
   // ✅ HOME REACH? - 14:15
   cron.schedule(
-    "15 14 * * *",
+    "40 14 * * *",
     () => {
       sendAIMessage(
         "GF se puchho ghar pahunch gayi kya? Cute caring style me likho, Hinglish + emoji. 1 line only"
@@ -242,7 +242,7 @@ client.on("ready", () => {
 
   // ✅ DINNER - 20:00
   cron.schedule(
-    "6 13 * * *",
+    "45 14 * * *",
     () => {
       sendAIMessage(
         "Care vali vibes me likho hinglish me dinner kar lena cheeku time se ye message bhejna hai 1 line only."
@@ -253,7 +253,7 @@ client.on("ready", () => {
 
   // ✅ GOOD NIGHT - 22:00
   cron.schedule(
-    "8 13 * * *",
+    "38 14 * * *",
     () => {
       sendAIMessage(
         "Good night message likho Hinglish me, pyar bhara, romantic, sweet dreams mention karo, emojis ke sath. 1 line "
